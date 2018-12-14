@@ -1,6 +1,6 @@
 {
   "name": "@bbc/sitemap-generator",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Easily create XML sitemaps for your website.",
   "homepage": "https://github.com/bbc/sitemap-generator",
   "contributors": [
@@ -46,11 +46,11 @@
     "!**/__tests__"
   ],
   "devDependencies": {
-    "eslint": "5.8.0",
+    "eslint": "^5.10.0",
     "husky": "1.1.2",
     "jest": "23.6.0",
     "lint-staged": "7.3.0",
-    "prettier": "1.14.3"
+    "prettier": "1.15.3"
   },
   "scripts": {
     "lint": "eslint src",
@@ -74,6 +74,7 @@
     },
     "extends": "eslint:recommended",
     "env": {
+      "es6": true,
       "node": true,
       "jest": true
     }
