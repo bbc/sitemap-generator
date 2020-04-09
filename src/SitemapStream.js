@@ -23,7 +23,7 @@ module.exports = function SitemapStream() {
   const getPath = () => tmpPath;
 
   const write = (url, currentDateTime, changeFreq, priority) => {
-    if (dailyFreq.includes(url) || url.includes('collections') || url.includes('tags')) {
+    if (dailyFreq.includes(url) || url.includes('collections') || url.includes('tags') || url.includes('dailylessons')) {
       changeFreq = 'daily';
     }
     const escapedUrl = escapeUnsafe(url);
