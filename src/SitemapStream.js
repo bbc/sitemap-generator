@@ -5,7 +5,6 @@ const fs = require('fs');
 const escapeUnsafe = require('./helpers/escapeUnsafe');
 
 module.exports = function SitemapStream() {
-
   const tmpPath = path.join(os.tmpdir(), `sitemap_${rand(10)}`);
   const stream = fs.createWriteStream(tmpPath);
 
